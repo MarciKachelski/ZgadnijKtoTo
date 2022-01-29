@@ -1,0 +1,13 @@
+1.Czy jestem bramkarzem?
+2.Czy jestem obrońcą?
+3.Czy jestem pomocnikiem?
+4.Czy jestem napastnikiem?
+5.Czy jestem hiszpanem?
+6.Czy jestem amerykaninem?
+7.Czy jestem innego pochodzenia?
+8.Czy jestem emerytowanym piłkarzem?
+9.Czy grałem w Barcelonie?
+10.Czy grałem w Realu Madryt?
+11.Czy gram w Barcelonie?
+12.Czy gram w Realu Madryt?
+13.Czy jestem emerytowanym piłkarzem?
