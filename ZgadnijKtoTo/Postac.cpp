@@ -8,7 +8,8 @@ using namespace std;
 int Postac::LosowaniePostaci()
 {
 	int numer;
-	numer = rand() % 20 + 1;
+	srand(time(NULL));
+	numer = rand() % 16 + 1;
 	return numer;
 }
 
@@ -21,7 +22,7 @@ void Postac::PobierzDaneZPliku(int numerPostaci)
 	{
 		getline(plik, linia);
 		nazwa = linia;
-		for (int i = 0; i <= 12; i++)
+		for (int i = 0; i < iloscOdpowiedzi; i++)
 		{
 			if (!plik.eof())
 			{
@@ -37,7 +38,7 @@ void Postac::PobierzDaneZPliku(int numerPostaci)
 
 void Postac::Odpowiedz(int numer)
 {
-	cout << "Odpowiedz to: " << endl;
+	cout << endl << "Odpowiedz to: " << endl;
 	cout << odpowiedzi[numer - 1] << endl << endl;
 }
 

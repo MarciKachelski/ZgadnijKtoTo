@@ -12,7 +12,7 @@ void Rozgrywka::PobierzPytaniaZPliku()
 	plik.open("Pytania.txt", ios::in);
 	if (plik.good() == true)
 	{
-		for (int i = 0; i <= 12; i++)
+		for (int i = 0; i < iloscPytan; i++)
 		{
 			if (!plik.eof())
 			{
@@ -32,7 +32,7 @@ void Rozgrywka::PobierzPostacieZPliku()
 	plik.open("Postacie.txt", ios::in);
 	if (plik.good() == true)
 	{
-		for (int i = 0; i <= 20; i++)
+		for (int i = 0; i < iloscPostaci; i++)
 		{
 			if (!plik.eof())
 			{
@@ -48,7 +48,7 @@ void Rozgrywka::PobierzPostacieZPliku()
 void Rozgrywka::WyswietlPytania()
 {
 	cout << endl << endl << "#################  PYTANIA  ####################" << endl << endl;
-	for (int i = 0; i < 13; i++)
+	for (int i = 0; i < iloscPytan; i++)
 	{
 		cout << pytania[i] << endl;
 	}
@@ -57,7 +57,7 @@ void Rozgrywka::WyswietlPytania()
 void Rozgrywka::WyswietlPostacie()
 {
 	cout << endl << endl << "#################  POSTACIE  ####################" << endl << endl;
-	for (int i = 0; i < 20; i++)
+	for (int i = 0; i < iloscPostaci; i++)
 	{
 		cout << postacie[i] << endl;
 	}
@@ -65,7 +65,7 @@ void Rozgrywka::WyswietlPostacie()
 
 bool Rozgrywka::SprawdzCzyIstnieje(string szukanaPostac)
 {
-	for (int i = 0; i < 20; i++) 
+	for (int i = 0; i < iloscPostaci; i++)
 	{
 		if (szukanaPostac == postacie[i]) {
 			return true;

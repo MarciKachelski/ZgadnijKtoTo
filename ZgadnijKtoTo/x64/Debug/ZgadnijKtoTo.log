@@ -1,0 +1,3 @@
+﻿  Postac.cpp
+D:\ZgadnijKtoTo\ZgadnijKtoTo\Postac.cpp(11,12): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
+  ZgadnijKtoTo.vcxproj -> D:\ZgadnijKtoTo\x64\Debug\ZgadnijKtoTo.exe

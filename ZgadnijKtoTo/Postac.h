@@ -7,7 +7,9 @@
 struct Postac {
 
 	std::string nazwa;
-	std::string odpowiedzi[13] = {};
+	std::string odpowiedzi[12] = {};
+
+	int iloscOdpowiedzi = 12;
 
 	int LosowaniePostaci();
 

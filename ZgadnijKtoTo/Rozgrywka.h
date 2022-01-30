@@ -7,10 +7,11 @@
 
 struct Rozgrywka
 {
-	std::string pytania[13];
-	std::string postacie[20];
+	std::string pytania[12];
+	std::string postacie[16];
 
-
+	int iloscPytan = 12;
+	int iloscPostaci = 16;
 
 	void PobierzPytaniaZPliku();
 
