@@ -1,3 +1,5 @@
+//Struktura s³u¿¹ca do przechowywania i obs³ugi informacji na temat szukanej postaci.
+
 #pragma once
 
 #ifndef Postacie_h

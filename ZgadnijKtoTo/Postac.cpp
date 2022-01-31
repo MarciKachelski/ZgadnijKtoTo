@@ -1,9 +1,13 @@
+//Struktura s≥uøπca do przechowywania i obs≥ugi informacji na temat szukanej postaci.
+
 #include <iostream>
 #include <fstream>
 #include <string>
 #include "Postac.h"
 
 using namespace std;
+
+//Losuje jednπ z szesnastu postaci
 
 int Postac::LosowaniePostaci()
 {
@@ -12,6 +16,8 @@ int Postac::LosowaniePostaci()
 	numer = rand() % 16 + 1;
 	return numer;
 }
+
+//Pobiera z pliku tekstowego wylosowanej postaci odpowiedzi na pytania oraz jej nazwe. 
 
 void Postac::PobierzDaneZPliku(int numerPostaci)
 {
@@ -36,11 +42,15 @@ void Postac::PobierzDaneZPliku(int numerPostaci)
 
 }
 
+//Wypisuje odpowiedü a zadane pytanie.
+
 void Postac::Odpowiedz(int numer)
 {
 	cout << endl << "Odpowiedz to: " << endl;
 	cout << odpowiedzi[numer - 1] << endl << endl;
 }
+
+//Sprawdza czy wpisana odpowiedü jest prawid≥owa.
 
 bool Postac::SprawdzNazwe(string wpisanaNazwa)
 {

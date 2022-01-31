@@ -1,3 +1,5 @@
+//Struktura s³u¿¹ca do przechowywania i obs³ugi informacji o dostepnych pytaniach i postaciach.
+
 #pragma once
 
 

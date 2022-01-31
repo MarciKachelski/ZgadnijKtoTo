@@ -1,9 +1,13 @@
+//Struktura s³u¿¹ca do przechowywania i obs³ugi informacji o dostepnych pytaniach i postaciach.
+
 #include <iostream>
 #include <fstream>
 #include <string>
 #include "Rozgrywka.h"
 
 using namespace std;
+
+//Pobiera z pliku tekstowego pytania.
 
 void Rozgrywka::PobierzPytaniaZPliku()
 {
@@ -25,6 +29,8 @@ void Rozgrywka::PobierzPytaniaZPliku()
 	}
 }
 
+//Pobiera z pliku tekstowego nazwy postaci. 
+
 void Rozgrywka::PobierzPostacieZPliku()
 {
 	fstream plik;
@@ -45,6 +51,8 @@ void Rozgrywka::PobierzPostacieZPliku()
 	}
 }
 
+//Wyœwietla w oknie konsoli dostêpne pytania. 
+
 void Rozgrywka::WyswietlPytania()
 {
 	cout << endl << endl << "#################  PYTANIA  ####################" << endl << endl;
@@ -54,6 +62,8 @@ void Rozgrywka::WyswietlPytania()
 	}
 }
 
+//Wyœwietla w oknie konsoli dostêpne postacie. 
+
 void Rozgrywka::WyswietlPostacie()
 {
 	cout << endl << endl << "#################  POSTACIE  ####################" << endl << endl;
@@ -62,6 +72,8 @@ void Rozgrywka::WyswietlPostacie()
 		cout << postacie[i] << endl;
 	}
 }
+
+//Sprawdza czy wpisana przez u¿ytkownika nazwa postaci istnieje. 
 
 bool Rozgrywka::SprawdzCzyIstnieje(string szukanaPostac)
 {
